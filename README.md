@@ -1,9 +1,6 @@
 # i-love-web
 
-Learning Journal en Digital Gardening
-
-De instructie voor de I Love Web vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/i-love-web/blob/main/docs/INSTRUCTIONS.md)
-
+Dit is de I-love-web versie van Miel. Deze website is een totaalplaatje van mijn creaties van video's tot websites naar stedenbouw. Vind alle informatie op de website!
 
 ## Licentie
 
