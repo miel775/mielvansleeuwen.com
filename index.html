@@ -1,35 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head class="topnav">
-    <link href="style/style.css" rel="stylesheet">
-    </head><body><img class="book" src="assets/book.png" alt="book" height="100px" width="100px">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miel van Sleeuwen</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Header with Dropdown -->
+    <header class="dropdownmobile">
+        <button class="dropdownbutton">Menu</button>
+        <div class="dropdowncontent">
+            <a class="active">Home</a>
+            <a href="diggarden.html">Digital Garden</a>
+            <a href="journal.html">Journal</a>
+            <a href="aboutme.html">About Me</a>
+        </div>
+    </header>
 
-
-<section class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="journal.html">Journal</a>
-    <a href="garden.html">Garden</a>
-    <a href="contact.html">Contact</a>
-</section>
-
-<section class="intro">
-    <div class="gradient">
-        <h2>Introduction</h2>
-        <p>Welcome on my Portfolio page on this page I will showcase all my work of study as Front End Webdeveloper.</p>
-
-        <h2>About Me</h2>
-        <img class="imgcontrol2" src="assets/IMG 2.png" alt="Miel" width="300px">
-        <img class="imgcontrol" src="assets/IMG.png" alt="Miel" width="300px">
-        <p> My name is Miel and I am 23 years old. On this website you will see all my artwork and progress of what I have learned on school. It is a portfolio that will make your day. I am passionate about CSS animations and video editing. This will definitely be showcased on this page!</p>
-    </div>
-      
-        
-      
-
-</section>
-
-    
-
+    <!-- Header for desktop -->
+     <header class="desktopheader">
+        <a clas="active">Home</a>
+        <a href="diggarden.html">Digital Garden</a>
+        <a href="journal.html">Journal</a>
+        <a href="aboutme.html">About me</a>
+     </header>
 </body>
-<script src="script/javascript.js"></script>
+
+    <section class="banner">
+        <img class="gif" src="assets/never stop exploring.gif" width="300px">
+        <img class="object1" src="assets/object1.png">
+        <img class="object2" src="assets/object2.png">
+
+
+        <div class="globe">
+              <script type="importmap">
+                      {
+                          "imports": {
+                              "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+                    "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+                  }
+                      }
+                  </script>
+        </div>
+    </section>
+
+    <section class="rumikubmobile">
+        <img src="assets/rumikubboard back.png" class="rumback">
+        <img src="assets/rumikubboard.png" class="rumfront">
+        <img src="assets/picnic table.png" class="picnic" width="700px">
+        <img src="assets/grass.png" class="grass">
+
+        <div class="rumikubblocks">
+            <img class="rumblock1" src="assets/rumikub/1/rumikub-01.png" width="50px">
+                <article class="sprint1">
+                    <h2> Sprint 1 </h2>
+                        <a>4-sep</a>
+                            <h3>Wat is het verband tussen HTML en CSS?</h3>
+                                <ol>Hoe verander je de pagina naar Darkmode?</ol>
+                                <ol>Welke code moet ik gebruiken voor animaties?</ul>
+                        <a>5-sep</a>
+                        <a>6-sep</a>
+                        <!-- volgende week -->
+                        <a>9-sep</a>
+                        <a>10-sep</a>
+                        <a>11-sep</a>
+                        <a>12-sep</a>
+                        <a>13-sep</a>
+                        <!-- en de nog volgende week -->
+                        <a>16-sep</a>
+                        <a>17-sep</a>
+                        <a>18-sep</a>
+                        <a>19-sep</a>
+                        <a>20-sep</a>
+                </article>
+        </div>
+    </section>
+
+    <section class="nostalgiachannel">
+        <!-- Windows XP Styled showcase of channel -->
+    </section>
+
+    <section class="ProjectA">
+        <!-- example of a project from digital garden -->
+    </section>
+
+    <section class="Urbandesign">
+        <!-- Prior study before FrontEnd will showcase urban planning in a loop sideview of a street -->
+    </section>
+
+    <section class="Globe">
+        <!-- Globe showcasing the places Miel visited and the story behind it -->
+    </section>
+
+    <section class="Contact">
+        <!-- Contact form based for collaborations -->
+    </section>
+
+    <script src="script.js"></script> 
 </html>

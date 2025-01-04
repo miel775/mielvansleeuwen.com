@@ -1,208 +1,274 @@
-head {
-    scale: 200%;
+:root {
+    --primary-color: linear-gradient(#FFF, #9b9b9b);
+    --secondary-color: #0A1252;
+    --luckynumber-color: #0775ff;
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    color:rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 2em;
-}
-p {
-    padding-left: 10px;
-}
-
-h1 {
-    padding-left: 10px;
-}
-h2 {
-    padding-left: 10px;
+    background-image: url(https://i.postimg.cc/zfm1hXfB/vecteezy-night-sky-with-stars-illustration-22336783.jpg);
+    background-size: cover;
+    background-position: end;
+    z-index: -4;
+    
 }
 
-html {
-    background-color: #050542;
-}
-
-.topnav {
-    background-color: #7373da;
+.dropdownmobile {
+    text-align: center;
+    background-image: linear-gradient(#FFF, #9b9b9b);
+    padding: 10px;
     position: relative;
-    margin: 10px;
-    right: 10px;
-    height: 93px;
-    width: 100%;
-    font-size: 24px;
 }
 
-.topnav a {
-    float: left;
-    color:black;
-    padding: 2em 1em;
-    text-decoration: wavy;
-    font-size: 18px;
+.dropdownbutton {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.topnav a:hover {
-    background-color: #050542;
-    color:azure;
+.dropdowncontent {
+    display: none;
+    
+    position: absolute;
+    top: 60px; /* Adjusted for button height */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
 }
 
-.topnav a.active {
+.dropdowncontent a {
+    color: black;
+    border: 3px solid var(--secondary-color);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+
+.dropdownmobile:hover .dropdowncontent {
+    display: block;
+}
+
+.active {
+    background-color: #afafaf;
+}
+
+.dropdownmobile button {
     background-color: black;
     color: white;
-}
-
-.grid-container {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.grid-container2 {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-container3 {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr;
-}
-
-.week1 {
-    padding-top: 10vh;
-    text-align: center;
-}
-
-.book {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-}
-
-.ul {
-    color: #050542;
-    background-color: #66e5bf;
+    border: none;
     border-radius: 1em;
-    margin: 1em;
-    margin-block: 2em;
-    padding: 1em;
 }
 
-.intro {
-    background-color:rgb(145, 145, 145);
-}
-
-.gradient {
-    height: 100vh;
-    background-image: linear-gradient(to left,#000000,#050542 );
-    background-size: 300%;
-    background-position: right;
-    transition: background-position 1s;
-    text-align: center;
-    padding-top: 10px;
-    z-index: -2;
-}
-
-.gradient:hover,
-.gradient:focus {
-    background-position: left;
-}
-
-
-@media only screen and (min-width: 768px)  {
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-}
-
-.imgcontrol {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    align-content: center;
-    left: 40%;
-    bottom: -10%
-}
-
-.imgcontrol2 {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    left: 40%;
-    bottom: -10%;
-}
-
-.imgcontrol2:hover {
-    display: block;
-    background-position: 10px 0;
-    animation-name: hover;
-    animation-duration: 0.3s infinite;
-}
-
-@keyframes hover {
-    0% {
-        background-position:0;
-    }
-    100% {
-        background-position:60px;
-    }
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto); 
-    gap: 20px; 
-    justify-content: center; 
+.desktopheader {
+    background-image: var(--primary-color);
+    height: 3em;
+    padding-left: 5px;
+    display: flex; 
+    justify-content: center;
+    gap: 1em;
     align-items: center; 
 }
 
-.iphone-container, .iphone-container2, .iphone-container3 {
-    width: 200px; 
+.desktopheader a {
+    border: 3px solid var(--secondary-color);
+    padding: 0.5em;
+    text-decoration: none;
+    background-color: #000;
+    color: #fefefe;
+    border-radius: 1em;
+    height: 2em;
+    display: flex; /* Ensure content inside is vertically aligned */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Fix typo from "absoulte" to "relative" */
+}
+
+.object2 {
+    position: fixed; /* Keeps it in the same place relative to the viewport */
+    width: 50%; /* Adjust width as needed */
+    top: 10%; /* Ensure it stays consistently at this vertical offset */
+    z-index: 1; /* Ensure proper stacking order */
+}
+
+/* Show desktop header for screens wider than 768px */
+@media only screen and (min-width: 768px) {
+    .dropdownmobile {
+        display: none;
+    }
+
+    .desktopheader {
+        display: flex;
+    }
+
+
+    .backgroundimg {
+        display: none;
+    }
+
+    .object2 {
+        width: 100%; 
+        position: fixed; 
+        top: 45%; 
+    }
+
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .desktopheader {
+        display: none;
+    }
+
+    .dropdownmobile {
+        display: block;
+    }
+
+    .object2 {
+        width: 100%; 
+        position: fixed; 
+        top: 10%;
+    }
+}
+
+/* Banner styles for mobile */
+.backgroundimg {
     position: relative;
+    z-index: -1;
+    animation: backgroundmoving 15s linear infinite;
 }
 
-.iphoneoff, .iphoneoff2, .iphoneoff3 {
+.object1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    z-index: 2;
+    top: 260px;
+    animation: object1moving 15s linear infinite;
+    width: 700px;
+}
+
+
+.gif {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+}
+
+.grass {
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+}
+
+/* Keyframes */
+@keyframes object1moving {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: -50px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes backgroundmoving {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+/* Picnic table styles */
+.picnic {
+    position: absolute;
+    top: 1000px;
+    z-index: 3;
+}
+
+.rumback {
+    position: absolute;
+    width: 200px;
+    left: 30px;
+    top: 1000px;
+    z-index: 4;
+}
+
+.rumfront {
+    position: absolute;
+    width: 200px;
+    left: 250px;
+    top: 1040px;
+    z-index: 4;
+}
+
+.rumblock1 {
+    position: absolute;
+    z-index: 8;
+    top: 1030px;
+    transform: scale(0.3) rotateX(40deg);
+}
+
+.rumblock1:after {
+    animation: pickup 0.3s linear;
+}
+
+.sprint1 {
+    display: none;
+}
+
+.sprint1.active {
     display: block;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.iphone, .iphone2, .iphone3 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    z-index: 8;
+    background-image: var(--primary-color);
+    padding: 3em;
+    width: 75%;
 }
 
-.iphone-container:hover .iphoneoff, 
-.iphone-container2:hover .iphoneoff2, 
-.iphone-container3:hover .iphoneoff3 {
-    opacity: 0;
+.rumikubblocks a {
+    background-color: #000;
+    color: #fefefe;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
 }
 
-.iphone-container:hover .iphone, 
-.iphone-container2:hover .iphone2, 
-.iphone-container3:hover .iphone3 {
-    opacity: 1;
-}
 
-.familymart {
+@keyframes pickup {
+    0% {
+     transform: scale(0.3) rotateX(40deg);
+    }
+
+    100% {
+        transform: scale(0.3) rotateX(30deg) translateY(-2em);  
+    }
+}
+/* nostalgia channel */
+
+.grass2 {
     position: absolute;
-    top:600px;
+    top: 1500px;
+    z-index: 2;
 }
 
-.iphone-container2 {
-    margin: 0px 400px;
-}
 
-.iphone-container3 {
-    margin: 0px 800px;
-}
 
-.gridgarden1 {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-column-start: -2;
-}
+
