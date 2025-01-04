@@ -29,8 +29,8 @@ Maak met HTML, CSS en JS je eigen statische website. Hou je voortgang bij in de 
 
 ### Semester 2
 
-Maak met Node, Express en EJS een doorontwikkeling op je statische site uit Semester 1. Neem alle content uit Semester 1 mee, en maak hiermee een dynamische, interactieve site.
+Maak met Node, Express en EJS een doorontwikkeling op je statische site uit Semester 1. Neem alle content uit Semester 1 mee, en maak hiermee een dynamische, interactieve site. Als je in Semester 1 in je Wiki hebt gewerkt, kijk dan eens of je die [kunt exporteren](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages#adding-or-editing-wiki-pages-locally) en anders in kunt zetten in je site. Misschien kun je er wel een (Markdown) database van maken.
 
 ### Semester 3 & 4
 
-Maak met Sveltekit, 11ty, Astro, of een ander framework een doorontwikkeling van je website uit Semester 2. Neem alle eerdere content mee als Markdown files, met bijvoorbeeld front matter als metadata, en maak met componenten je dynamische portfolio.
+Maak met Sveltekit, 11ty, Astro, of een ander framework een doorontwikkeling van je website uit Semester 2. Neem alle eerdere content mee als Markdown files, [hergebruik je Wiki](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages#adding-or-editing-wiki-pages-locally) als je dat nog niet hebt gedaan. Gebruik bijvoorbeeld front matter als metadata, of zet een database met gestructureerde content op, en maak met componenten je dynamische portfolio met weblog. Denk ook na over hoe je je content kunt hergebruiken als je besluit naar een ander framework over te stappen.
