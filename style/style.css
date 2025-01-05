@@ -18,8 +18,172 @@ body {
     background-size: cover;
     background-position: end;
     z-index: -4;
-    
 }
+
+/* never stop exploring */
+#text {
+    position: absolute;
+    left: 4%;
+    top: 15%;
+}
+
+/* never */
+
+#Never path:nth-child(1) {
+    stroke-dasharray: 15px;
+    stroke-dashoffset: 15px;
+    animation: writing 2s ease forwards 0.2s;
+}
+
+#Never path:nth-child(2) {
+    stroke-dasharray: 43px;
+    stroke-dashoffset: 43px;
+    animation: writing 2s ease forwards 0.4s;
+
+}
+
+#Never path:nth-child(3) {
+    stroke-dasharray: 42px;
+    stroke-dashoffset: 42px;
+    animation: writing 2s ease forwards 0.8s;
+
+}
+
+#Never path:nth-child(4) {
+    stroke-dasharray: 38px;
+    stroke-dashoffset: 38px;
+    animation: writing 2s ease forwards 1.2s;
+
+}
+
+#Never path:nth-child(5) {
+    stroke-dasharray: 46px;
+    stroke-dashoffset: 46px;
+    animation: writing 2s ease forwards 1.4s;
+
+}
+
+#Never path:nth-child(6) {
+    stroke-dasharray: 69px;
+    stroke-dashoffset: 69px;
+    animation: writing 2s ease forwards 1.7s;
+
+}
+
+/* stop */
+
+#stop path:nth-child(1) {
+    stroke-dasharray: 70px;
+    stroke-dashoffset: 70px;
+    animation: writing 2s ease forwards 0.2s;
+}
+
+#stop path:nth-child(2) {
+    stroke-dasharray: 50px;
+    stroke-dashoffset: 50px;
+    animation: writing 2s ease forwards 0.4s;
+
+}
+
+#stop path:nth-child(3) {
+    stroke-dasharray: 10px;
+    stroke-dashoffset: 10px;
+    animation: writing 2s ease forwards 0.8s;
+
+}
+
+#stop path:nth-child(4) {
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 40px;
+    animation: writing 2s ease forwards 1.2s;
+}
+
+#stop path:nth-child(5) {
+    stroke-dasharray: 69px;
+    stroke-dashoffset: 69px;
+    animation: writing 2s ease forwards 1.5s;
+}
+
+/* exploring */
+
+#exploring path:nth-child(1) {
+    stroke-dasharray: 90px;
+    stroke-dashoffset: 90px;
+    animation: writing 2s ease forwards 0.1s;
+}
+
+#exploring path:nth-child(2) {
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    animation: writing 2s ease forwards 0.2s;
+}
+
+#exploring path:nth-child(3) {
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    animation: writing 2s ease forwards 0.3s;
+}
+
+#exploring path:nth-child(4) {
+    stroke-dasharray: 69px;
+    stroke-dashoffset: 69px;
+    animation: writing 2s ease forwards 0.3s;
+}
+
+#exploring path:nth-child(5) {
+    stroke-dasharray: 45px;
+    stroke-dashoffset: 45px;
+    animation: writing 2s ease forwards 0.5s;
+}
+
+#exploring path:nth-child(6) {
+    stroke-dasharray: 45px;
+    stroke-dashoffset: 45px;
+    animation: writing 2s ease forwards 0.5s;
+}
+
+#exploring path:nth-child(7) {
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
+    animation: writing 2s ease forwards 0.7s;
+}
+
+#exploring path:nth-child(8) {
+    stroke-dasharray: 30px;
+    stroke-dashoffset: 30px;
+    animation: writing 2s ease forwards 0.9s;
+}
+
+#exploring path:nth-child(9) {
+    stroke-dasharray: 50px;
+    stroke-dashoffset: 50px;
+    animation: writing 2s ease forwards 1.0s;
+}
+
+#exploring path:nth-child(10) {
+    stroke-dasharray: 150px;
+    stroke-dashoffset: 150px;
+    animation: writing 2s ease forwards 1.2s;
+}
+
+#exploring path:nth-child(11) {
+    stroke-dasharray: 35px;
+    stroke-dashoffset: 35px;
+    animation: writing 2s ease forwards 1.7s;
+}
+
+#exploring path:nth-child(12) {
+    stroke-dasharray: 35px;
+    stroke-dashoffset: 35px;
+    animation: writing 2s ease forwards 1.9s;
+}
+
+@keyframes writing{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
 
 .dropdownmobile {
     text-align: center;
@@ -100,13 +264,11 @@ body {
 }
 
 .object2 {
-    position: fixed; /* Keeps it in the same place relative to the viewport */
-    width: 50%; /* Adjust width as needed */
-    top: 10%; /* Ensure it stays consistently at this vertical offset */
-    z-index: 1; /* Ensure proper stacking order */
+    width: 100%;
+    top: 1%;
+    z-index: 2;
 }
 
-/* Show desktop header for screens wider than 768px */
 @media only screen and (min-width: 768px) {
     .dropdownmobile {
         display: none;
@@ -138,12 +300,6 @@ body {
     .dropdownmobile {
         display: block;
     }
-
-    .object2 {
-        width: 100%; 
-        position: fixed; 
-        top: 10%;
-    }
 }
 
 /* Banner styles for mobile */
@@ -168,10 +324,10 @@ body {
     left: 7%;
 }
 
+
 .grass {
-    position: absolute;
-    z-index: 1;
-    top: 600px;
+    position: fixed;
+    width: 100%;
 }
 
 /* Keyframes */
@@ -262,12 +418,6 @@ body {
     }
 }
 /* nostalgia channel */
-
-.grass2 {
-    position: absolute;
-    top: 1500px;
-    z-index: 2;
-}
 
 
 

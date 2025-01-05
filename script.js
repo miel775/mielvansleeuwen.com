@@ -5,3 +5,9 @@ let sprint1 = document.querySelector('.sprint1')
 
   sprint1.classList.toggle('active');
 });
+
+const never = document.querySelectorAll('#stop path')
+
+for(let i = 0; i<never.length; i++){
+  console.log(`Letter ${i} is ${never[i].getTotalLength()}`);
+}
