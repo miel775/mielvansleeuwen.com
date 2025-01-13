@@ -13,11 +13,8 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(https://i.postimg.cc/zfm1hXfB/vecteezy-night-sky-with-stars-illustration-22336783.jpg);
-    background-size: cover;
-    background-position: end;
-    z-index: -4;
+header {
+    overflow: visible;
 }
 
 /* never stop exploring */
@@ -264,9 +261,14 @@ body {
 }
 
 .object2 {
+    position: fixed;
     width: 100%;
-    top: 1%;
+    top: -10%;
     z-index: 2;
+}
+
+.northernlights {
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -283,12 +285,6 @@ body {
         display: none;
     }
 
-    .object2 {
-        width: 100%; 
-        position: fixed; 
-        top: 45%; 
-    }
-
 }
 
 /* Mobile styles */
@@ -300,23 +296,27 @@ body {
     .dropdownmobile {
         display: block;
     }
+
+    .grass {
+        position: absolute;
+    }
 }
 
 /* Banner styles for mobile */
-.backgroundimg {
-    position: relative;
+body {
+    background-image: linear-gradient(to bottom right, #9ca4ff,#07275c);
+    min-height: 1000px;
     z-index: -1;
-    animation: backgroundmoving 15s linear infinite;
 }
 
 .object1 {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 260px;
     animation: object1moving 15s linear infinite;
     width: 700px;
 }
-
+s
 
 .gif {
     position: absolute;
@@ -326,8 +326,10 @@ body {
 
 
 .grass {
-    position: fixed;
+    position: absolute;
     width: 100%;
+    z-index: 3;
+    top: -10em;
 }
 
 /* Keyframes */
