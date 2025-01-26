@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miel van Sleeuwen</title>
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
     <!-- Header with Dropdown -->
@@ -55,17 +59,18 @@
             </g>
 
         </svg>
+        <h1>Miel van Sleeuwen</h1>
+        <div class="snowworld">
+            <video width="1920" height="1280" autoplay muted loop playsinline>
+                <source src="pages/head/vecteezy_aurora-borealis-northern-lights_16191969.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="pages/head/background-img.png" class="snowhills">
 
-        <img class="object1" src="assets/object1.png">
-        <img class="object2" src="assets/object2.png">
+            <img src="pages/head/miel-1.png" class="miel-1">
+            <img src="pages/head/miel-2.png" class="miel-2">
 
-        <div class="backgroundimg">
-            <div class="bg12pm"></div>
-            <div class="bg1am"></div>
-            <div class="bg2am"></div>
-            <div class="bg3am"></div>
-            <div class="bg4am"></div>
-            <div class="bg5am"></div>
+            <audio id="snowworld" src="assets/homepage/snowworld.mp3" />
         </div>
 
         <!-- all elements on desktopscreen -->
@@ -78,186 +83,327 @@
             <div class="rumikub-board">
                 <img src="assets/rumikubboard back.png" class="rumback">
                 <img src="assets/rumikubboard.png" class="rumfront">
+
+                <div class="blocks">
+                    <img class="rumblock1" src="assets/rumikub/1/rumikub-01.png" width="100px">
+                    <img class="rumblock2" src="assets/rumikub/1/rumikub-02.png" width="100px">
+                    <img class="rumblock3" src="assets/rumikub/1/rumikub-03.png" width="100px">
+                    <img class="rumblock4" src="assets/rumikub/1/rumikub-04.png" width="100px">
+                    <img class="rumblock5" src="assets/rumikub/1/rumikub-05.png" width="100px">
+                    <img class="rumblock6" src="assets/rumikub/1/rumikub-06.png" width="100px">
+                </div>
             </div>
 
             <div class="rumikubblocks">
-                <!-- 
-                <img class="hidden" class="rumblock1" src="assets/rumikub/1/rumikub-01.png" width="50px" >
-                    <article class="sprint1">
-                        <h2>Sprint 1</h2>
-        
-                        <h3>Week 1</h3>
-                        <a href="#">4-sep</a>
-                        <h4>Wat is het verband tussen HTML en CSS?</h4>
-                        <ol>
-                            <li>Hoe verander je de pagina naar Darkmode?</li>
-                            <li>Welke code moet ik gebruiken voor animaties?</li>
-                        </ol>
+
+                <article class="sprintblock 1">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 1</a>
+                        <a>Week 2</a>
+                        <a>Week 3</a>
+                    </div>
+                    <div class="textfield">
+                        <div class="week-1">
+                            <h3>Woensdag</h3>
+                            <h4>Wat is het verband tussen HTML en CSS?</h4>
+                            <ol>
+                                <li>Hoe verander je de pagina naar Darkmode?</li>
+                                <li>Welke code moet ik gebruiken voor animaties?</li>
+                            </ol>
+                            <h3> Donderdag </h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Geleerd hoe je keyframes gebruikt</li>
+                                <li>Kennismaking JavaScript</li>
+                                <li>Achtergrond op een website plaatsen met Z-index</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe werkt de hover over een gifje?</li>
+                                <li>Hoe zet je een video op de achtergrond?</li>
+                                <li>Is JavaScript hoofdlettergevoelig?</li>
+                            </ol>
+                            <h3> Vrijdag </h3>
+                            <h4>Wat heb ik gedaan?</h4>
+                            <ol>
+                                <li>Expo gehad over visitekaartje</li>
+                                <li>Repository is een belangrijk element</li>
+                                <li>Feedback formulier ingevuld</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                    <img src="pages/journal/cross.png" width="50px" alt="rumikublogo" class="cross">
+                </article>
+
+                <article class="sprintblock 2">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 4</a>
+                        <a>Week 5</a>
+                        <a>Week 6</a>
+                    </div>
+                    <div class="textfield"></div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                </article>
+
+                <article class="sprintblock 3">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 7</a>
+                        <a>Week 8</a>
+                        <a>Week 9</a>
+                    </div>
+                    <div class="textfield"></div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                </article>
+
+                <article class="sprintblock 4">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 10</a>
+                        <a>Week 11</a>
+                        <a>Week 12</a>
+                    </div>
+                    <div class="textfield"></div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                </article>
+
+                <article class="sprintblock 5">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 13</a>
+                        <a>Week 14</a>
+                        <a>Week 15</a>
+                    </div>
+                    <div class="textfield"></div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                </article>
+
+                <article class="sprintblock 6">
+                    <h2>Sprint 1</h2>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo1">
+                    <div class="dates">
+                        <a>Week 16</a>
+                        <a>Week 17</a>
+                        <a>Week 18</a>
+                    </div>
+                    <div class="textfield">
+                        <div class="week-1">
+                            <h3>Woensdag</h3>
+                            <h4>Wat is het verband tussen HTML en CSS?</h4>
+                            <ol>
+                                <li>Hoe verander je de pagina naar Darkmode?</li>
+                                <li>Welke code moet ik gebruiken voor animaties?</li>
+                            </ol>
+                            <h3> Donderdag </h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Geleerd hoe je keyframes gebruikt</li>
+                                <li>Kennismaking JavaScript</li>
+                                <li>Achtergrond op een website plaatsen met Z-index</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe werkt de hover over een gifje?</li>
+                                <li>Hoe zet je een video op de achtergrond?</li>
+                                <li>Is JavaScript hoofdlettergevoelig?</li>
+                            </ol>
+                            <h3> Vrijdag </h3>
+                            <h4>Wat heb ik gedaan?</h4>
+                            <ol>
+                                <li>Expo gehad over visitekaartje</li>
+                                <li>Repository is een belangrijk element</li>
+                                <li>Feedback formulier ingevuld</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <img src="pages/journal/rumikub-logo.png" width="50px" alt="rumikublogo" class="rumikublogo2">
+                    <h2>Your Tribe</h2>
+                </article>
+
                     
-                        <a href="#">5-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Geleerd hoe je keyframes gebruikt</li>
-                            <li>Kennismaking JavaScript</li>
-                            <li>Achtergrond op een website plaatsen met Z-index</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe werkt de hover over een gifje?</li>
-                            <li>Hoe zet je een video op de achtergrond?</li>
-                            <li>Is JavaScript hoofdlettergevoelig?</li>
-                        </ol>
-                    
-                        <a href="#">6-sep</a>
-                        <h4>Wat heb ik gedaan?</h4>
-                        <ol>
-                            <li>Expo gehad over visitekaartje</li>
-                            <li>Repository is een belangrijk element</li>
-                            <li>Feedback formulier ingevuld</li>
-                        </ol>
-                    
-                        <h3>Week 2</h3>
-                        <a href="#">9-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Miro gebruik</li>
-                            <li>Ontwerpstijl</li>
-                            <li>Taakverdeling</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Wat zijn de rollen in samenwerkingsgroep?</li>
-                            <li>Hoe kan je het beste ideeën opdoen?</li>
-                            <li>Wat is het belangrijkste in samenwerken?</li>
-                        </ol>
-                    
-                        <a href="#">10-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Grid toepassen</li>
-                            <li>Termen voor columns</li>
-                            <li>Het formaat van grid aanpassen op een website</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe zorg je ervoor dat een article bij column twee begint?</li>
-                            <li>Waarom is een grid zo belangrijk op een website?</li>
-                            <li>Welke selectors kan je gebruiken in plaats van div?</li>
-                        </ol>
-                    
-                        <a href="#">11-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Breakpoints</li>
-                            <li>Common Pixelwaardes</li>
-                            <li>@media (min-width) {} gebruiken</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Wanneer is de breakpoint van een website?</li>
-                            <li>Wat is de pixelwaarde van mijn telefoon?</li>
-                            <li>Is de breakpoint verschillend bij websites?</li>
-                        </ol>
-                    
-                        <a href="#">12-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Live browser in Visual Studio Code</li>
-                            <li>Gespeeld met repository</li>
-                            <li>Display: Flex toepassen</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe creëer je een andere font op een website?</li>
-                            <li>Hoe maak je een slideshow met foto’s?</li>
-                            <li>Wanneer pas je position: absolute toe?</li>
-                        </ol>
-                    
-                        <a href="#">13-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Hoe je bij een samenwerkingsopdracht een issue moet commiten</li>
-                            <li>Dat je met CSS hele vette websites kan maken</li>
-                            <li>Toegankelijkheid websites</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe werk je het beste samen aan een opdracht?</li>
-                            <li>Hoe maak je een website toegankelijk voor mindervaliden?</li>
-                            <li>Hoe kan je de flex optie toepassen op een website?</li>
-                        </ol>
-                    
-                        <h3>Week 3</h3>
-                        <a href="#">16-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Contrast is belangrijk voor visuele hiërarchie</li>
-                            <li>Hoe je Figma gebruikt</li>
-                            <li>Hoe je sneltoetsen gebruikt op Figma</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe pas ik Grid toe op Figma?</li>
-                            <li>Waarom is visuele hiërarchie belangrijk?</li>
-                            <li>Waar kijk je als eerste naar op een pagina en wat is het doel ervan?</li>
-                        </ol>
-                    
-                        <a href="#">17-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Hoe je keyframes toepast</li>
-                            <li>Overshoot gebruiken</li>
-                            <li>Invert gebruiken</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Kan je animaties uitzetten op een website?</li>
-                            <li>Hoe vrolijk je een website op?</li>
-                            <li>Welke bron wordt er het meest gebruikt bij FdNd?</li>
-                        </ol>
-                    
-                        <a href="#">18-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Globe toepassen in CSS animatie</li>
-                            <li>Template Column start</li>
-                            <li>Random Stars Background</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe verdeel je haalbare taken?</li>
-                            <li>Hoe zet je een video op de achtergrond?</li>
-                            <li>Wanneer gebruik je de keyframe?</li>
-                        </ol>
-                    
-                        <a href="#">19-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Hoe je een pulse animation toevoegt</li>
-                            <li>Betere HTML structuur</li>
-                            <li>Element laten verschijnen met hover</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe houd je het overzicht in een HTML document?</li>
-                            <li>Hoe push je jouw werk naar je projectgroep?</li>
-                            <li>Hoe gebruik je een groep in een CSS-document?</li>
-                        </ol>
-                    
-                        <a href="#">20-sep</a>
-                        <h4>Wat heb ik geleerd?</h4>
-                        <ol>
-                            <li>Rapportage maken Samenwerking</li>
-                            <li>Tekenen met fineliner</li>
-                            <li>Zorgvuldigheid in GitHub</li>
-                        </ol>
-                        <h4>Studievragen</h4>
-                        <ol>
-                            <li>Hoe reflecteer je het beste op een samenwerkingsperiode?</li>
-                            <li>Waarom is het belangrijk om schetsen te maken?</li>
-                            <li>Hoe beeld je tekst uit?</li>
-                        </ol>
-                    </article>
+                    <div class="content">
+                        <!-- 2-9 -->
+                        <div class="week-1">
+                            <h3>Woensdag</h3>
+                            <h4>Wat is het verband tussen HTML en CSS?</h4>
+                            <ol>
+                                <li>Hoe verander je de pagina naar Darkmode?</li>
+                                <li>Welke code moet ik gebruiken voor animaties?</li>
+                            </ol>
+                            <h3> Donderdag </h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Geleerd hoe je keyframes gebruikt</li>
+                                <li>Kennismaking JavaScript</li>
+                                <li>Achtergrond op een website plaatsen met Z-index</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe werkt de hover over een gifje?</li>
+                                <li>Hoe zet je een video op de achtergrond?</li>
+                                <li>Is JavaScript hoofdlettergevoelig?</li>
+                            </ol>
+                            <h3> Vrijdag </h3>
+                            <h4>Wat heb ik gedaan?</h4>
+                            <ol>
+                                <li>Expo gehad over visitekaartje</li>
+                                <li>Repository is een belangrijk element</li>
+                                <li>Feedback formulier ingevuld</li>
+                            </ol>
+                        </div>
+                        
+                        <!-- week 2 -->
+                        <!-- 9-9 -->
+                         <div class="week-2">
+                        <h3>Maandag</h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Miro gebruik</li>
+                                <li>Ontwerpstijl</li>
+                                <li>Taakverdeling</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Wat zijn de rollen in samenwerkingsgroep?</li>
+                                <li>Hoe kan je het beste ideeën opdoen?</li>
+                                <li>Wat is het belangrijkste in samenwerken?</li>
+                            </ol>
+                        <h3>Dinsdag</h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Grid toepassen</li>
+                                <li>Termen voor columns</li>
+                                <li>Het formaat van grid aanpassen op een website</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe zorg je ervoor dat een article bij column twee begint?</li>
+                                <li>Waarom is een grid zo belangrijk op een website?</li>
+                                <li>Welke selectors kan je gebruiken in plaats van div?</li>
+                            </ol>
+                        <h3>Woensdag</h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Breakpoints</li>
+                                <li>Common Pixelwaardes</li>
+                                <li>@media (min-width) {} gebruiken</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Wanneer is de breakpoint van een website?</li>
+                                <li>Wat is de pixelwaarde van mijn telefoon?</li>
+                                <li>Is de breakpoint verschillend bij websites?</li>
+                            </ol>
+                        <h3>Donderdag</h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Live browser in Visual Studio Code</li>
+                                <li>Gespeeld met repository</li>
+                                <li>Display: Flex toepassen</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe creëer je een andere font op een website?</li>
+                                <li>Hoe maak je een slideshow met foto’s?</li>
+                                <li>Wanneer pas je position: absolute toe?</li>
+                            </ol>
+                        <h3>Vrijdag</h3>
+                            <h4>Wat heb ik geleerd?</h4>
+                            <ol>
+                                <li>Hoe je bij een samenwerkingsopdracht een issue moet commiten</li>
+                                <li>Dat je met CSS hele vette websites kan maken</li>
+                                <li>Toegankelijkheid websites</li>
+                            </ol>
+                            <h4>Studievragen</h4>
+                            <ol>
+                                <li>Hoe werk je het beste samen aan een opdracht?</li>
+                                <li>Hoe maak je een website toegankelijk voor mindervaliden?</li>
+                                <li>Hoe kan je de flex optie toepassen op een website?</li>
+                            </ol>
+                        </div>
+
+                        <div class="week-3">
+                            <h3>Maandag</h3>
+                                <h4>Wat heb ik geleerd?</h4>
+                                <ol>
+                                    <li>Contrast is belangrijk voor visuele hiërarchie</li>
+                                    <li>Hoe je Figma gebruikt</li>
+                                    <li>Hoe je sneltoetsen gebruikt op Figma</li>
+                                </ol>
+                                <h4>Studievragen</h4>
+                                <ol>
+                                    <li>Hoe pas ik Grid toe op Figma?</li>
+                                    <li>Waarom is visuele hiërarchie belangrijk?</li>
+                                    <li>Waar kijk je als eerste naar op een pagina en wat is het doel ervan?</li>
+                                </ol>
+                            <h3>Dinsdag</h3>
+                                <h4>Wat heb ik geleerd?</h4>
+                                <ol>
+                                    <li>Hoe je keyframes toepast</li>
+                                    <li>Overshoot gebruiken</li>
+                                    <li>Invert gebruiken</li>
+                                </ol>
+                                <h4>Studievragen</h4>
+                                <ol>
+                                    <li>Kan je animaties uitzetten op een website?</li>
+                                    <li>Hoe vrolijk je een website op?</li>
+                                    <li>Welke bron wordt er het meest gebruikt bij FdNd?</li>
+                                </ol>
+                            <h3>Woensdag</h3>
+                                <h4>Wat heb ik geleerd?</h4>
+                                <ol>
+                                    <li>Globe toepassen in CSS animatie</li>
+                                    <li>Template Column start</li>
+                                    <li>Random Stars Background</li>
+                                </ol>
+                                <h4>Studievragen</h4>
+                                <ol>
+                                    <li>Hoe verdeel je haalbare taken?</li>
+                                    <li>Hoe zet je een video op de achtergrond?</li>
+                                    <li>Wanneer gebruik je de keyframe?</li>
+                                </ol>
+                            <h3>Donderdag</h3>
+                                <h4>Wat heb ik geleerd?</h4>
+                                <ol>
+                                    <li>Hoe je een pulse animation toevoegt</li>
+                                    <li>Betere HTML structuur</li>
+                                    <li>Element laten verschijnen met hover</li>
+                                </ol>
+                                <h4>Studievragen</h4>
+                                <ol>
+                                    <li>Hoe houd je het overzicht in een HTML document?</li>
+                                    <li>Hoe push je jouw werk naar je projectgroep?</li>
+                                    <li>Hoe gebruik je een groep in een CSS-document?</li>
+                                </ol>
+                            <h3>Vrijdag</h3>
+                                <h4>Wat heb ik geleerd?</h4>
+                                <ol>
+                                    <li>Rapportage maken Samenwerking</li>
+                                    <li>Tekenen met fineliner</li>
+                                    <li>Zorgvuldigheid in GitHub</li>
+                                </ol>
+                                <h4>Studievragen</h4>
+                                <ol>
+                                    <li>Hoe reflecteer je het beste op een samenwerkingsperiode?</li>
+                                    <li>Waarom is het belangrijk om schetsen te maken?</li>
+                                    <li>Hoe beeld je tekst uit?</li>
+                                </ol>
+                            </div>
+                        <!-- 16-9 -->
+                    </div>
 
                     <article class="sprint2">
                         <article>
@@ -371,8 +517,9 @@
                                 <li>Hoe zet je je product het beste neer?</li>
                                 <li>Hoe stel je een goede ReadMe op?</li>
                             </ol>
-                        
-                            <h3>Week 4</h3>
+                        </article>
+                        <article class="sprint3">  
+                            <h3>Week 1</h3>
                             <a href="#">16-okt</a>
                             <h4>Wat heb ik geleerd?</h4>
                             <ol>
@@ -398,7 +545,7 @@
                                 <li>Screen reader en keyboard navigatie getest</li>
                             </ol>
                         
-                            <h3>Week 5</h3>
+                            <h3>Week 2</h3>
                             <a href="#">21-okt</a>
                             <h4>Wat heb ik geleerd?</h4>
                             <ol>
@@ -418,7 +565,7 @@
                                 <li>Betere visuals toegevoegd</li>
                             </ol>
                         </article>   
-                        
+                        <article class="sprint4">
                             <h3>Sprint 4</h3>
 
                             <a href="#">11-nov</a>
@@ -540,6 +687,8 @@
                                     <li>Hoe je JavaScript kan toepassen op animaties in de website</li>
                                     <li>Oplossing: Gebruik van <a href="https://www.w3schools.com/js/js_timing.asp" target="_blank">tijdstippen</a> om de animatie soepel te laten voelen</li>
                                 </ol>
+                            </article>
+                            <article class="sprint5">
 
                             <h3>Sprint 5</h3>
 
@@ -658,8 +807,10 @@
                         <ol>
                             <li>Arcs: toepassen in mijn I Love Web-website</li>
                         </ol>
+
+                        <a href="#">23-jan</a>
+                        <p>Vandaag hebben we ons voorbereid op de expo voor aanstaande vrijdag. Hier hebben we een poster gemaakt van de website die we deze sprint hebben behandeld. Een presenteer plaatje van het werk wat het afgelopen semester is gemaakt. </p>
             </div>
-             -->
         </section>
 
 

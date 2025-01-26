@@ -6,15 +6,19 @@
 
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     overflow: visible;
+}
+
+h1 {
+    font-family: Rowdies;
 }
 
 /* never stop exploring */
@@ -260,12 +264,71 @@ header {
     position: relative; /* Fix typo from "absoulte" to "relative" */
 }
 
-.object2 {
-    position: grid;
-    width: 100%;
-    top: -10%;
-    z-index: 2;
+.snowworld video {
+    top: 0;
+    left: 0;
+    width: 125%;
+    height: 125%;
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    animation: object1moving 15s linear infinite;
 }
+
+.snowhills {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+
+.miel-1 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 17%;
+    right: 5%;
+    scale: 0.8;
+    filter: drop-shadow(0.1em 0.1em 0 #000);
+    transition: opacity 0.3s ease;
+}
+
+.miel-2 {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    right: 5%;
+    scale: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.miel-1:hover {
+    opacity: 0;
+}
+
+.miel-1:hover + .miel-2 {
+    opacity: 1;
+}
+
+.banner h1 {
+    position: absolute;
+    z-index: 6;
+    top: 2%;
+    right: 2%;
+    font-size: 125px;
+    color: powderblue;
+    filter:drop-shadow(0.2px,0.3px,0.2 #0d0d0d);
+    -webkit-text-stroke-color: #0d0d0d;
+    -webkit-text-stroke-width: medium;
+    opacity: 0;
+}
+
+
+.miel-1:hover + .banner h1 {
+    opacity: 1;
+}
+    
+
 
 
 /* Banner styles for mobile */
@@ -315,43 +378,8 @@ body {
 }
 
 /* Picnic table styles */
-.picnic {
-    position: absolute;
-    top: 1000px;
-    z-index: 3;
-}
 
-.rumblock1 {
-    position: absolute;
-    z-index: 8;
-    top: 1030px;
-    transform: scale(0.3) rotateX(40deg);
-}
 
-.rumblock1:after {
-    animation: pickup 0.3s linear;
-}
-
-.sprint1 {
-    display: none;
-}
-
-.sprint1.active {
-    display: block;
-    position: absolute;
-    z-index: 8;
-    background-image: var(--primary-color);
-    padding: 3em;
-    width: 75%;
-}
-
-.rumikubblocks a {
-    background-color: #000;
-    color: #fefefe;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-}
 
 
 @keyframes pickup {
@@ -361,6 +389,104 @@ body {
 
     100% {
         transform: scale(0.3) rotateX(30deg) translateY(-2em);  
+    }
+}
+
+.sprintblock {
+    background-color: #ddcfc3;
+    border: 2px solid #d19f69;
+    width: 256px;
+    height: 350px;
+    position: absolute;
+    z-index: 4;
+    top: 72%;
+    left: 27%;
+    scale: 1.2;
+    
+    h2 {
+        margin: 0.5em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .rumikublogo1 {
+        opacity: 0.5;
+        position: relative;
+        top: -15%;
+        scale: 0.5;
+    }
+
+    .rumikublogo2 {
+        opacity: 0.5;
+        position: relative;
+        left: 82%;
+        top: 5%;
+        scale: 0.5;
+    }
+
+    .cross {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+
+
+    .dates {
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+        margin: 0.3em;
+        gap: 2px;
+        text-align: center;
+        margin-top: -3.5em;
+
+        a:nth-of-type(1) {
+            grid-column-start: 2;
+        }
+
+        a {
+            background-color: #d19f69;
+            border: 2px solid #000;
+            padding: 0.2em;
+            font-size: 0.6em;
+        }
+    }
+
+    .textfield {
+        height: 213px;
+        width: 191px;
+        background-color: #dab186;
+        position: relative;
+        left: 12%;
+        top: 2%;
+        overflow: scroll;
+        padding: 0.3em;
+
+        h3 {
+            font-size: 16px;
+            
+        }
+
+        h3:nth-of-type(2),
+        h3:nth-of-type(3),
+        h3:nth-of-type(4)
+         {
+            margin-top: 1em;
+        }
+
+        h4 {
+            margin-left: 1em;
+            font-size: 12px;
+        }
+
+        ol {
+            margin-left: 1.2em;
+            font-size: 9px;
+        }
+    }
+
+    h2:nth-of-type(2) {
+        position: relative;
+        top: -13%;
     }
 }
 
@@ -414,6 +540,7 @@ section {
 .rumikubmobile {
     display: grid;
     width: 100%;
+    margin-bottom: -1em;
 }
 
 
@@ -537,7 +664,23 @@ footer {
         display: flex;
     }
 
-    section {
+    .rumikubmobile {
+        display: none;
+    }
+
+    .nostalgiachannel {
+        display: none;
+    }
+
+    .Urbandesign {
+        display: none;
+    }
+
+    .globe {
+        display: none;
+    }
+
+    .contact {
         display: none;
     }
 
@@ -548,16 +691,6 @@ footer {
     footer {
         display: none;
     }
-
-    body {
-        overflow: hidden;
-    }
-
-    .object1 {
-        scale: 200%;
-        left: 15%;
-    }
-
 }
 
 /* Mobile styles */
@@ -661,4 +794,22 @@ footer {
 }
 
 
-
+/* fonts */
+.rowdies-light {
+    font-family: "Rowdies", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
