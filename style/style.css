@@ -28,6 +28,20 @@ h1 {
     top: 15%;
 }
 
+#title {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    scale: 1.5;
+
+    @media only (min-width: 768px) {
+        right: 50%;
+        scale: 1;
+    }
+}
+
+
+
 /* never */
 
 #Never path:nth-child(1) {
@@ -179,6 +193,128 @@ h1 {
     animation: writing 2s ease forwards 1.9s;
 }
 
+/* miel */
+#Miel path:nth-child(1) {
+    stroke-dasharray: 170px;
+    stroke-dashoffset: 170px;
+    animation: writing 2s ease forwards 0.2s;
+}
+
+#Miel path:nth-child(2) {
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: writing 2s ease forwards 0.4s;
+}
+
+#Miel path:nth-child(3) {
+    stroke-dasharray: 10px;
+    stroke-dashoffset: 10px;
+    animation: writing 2s ease forwards 0.8s;
+}
+
+#Miel path:nth-child(4) {
+    stroke-dasharray: 120px;
+    stroke-dashoffset: 120px;
+    animation: writing 2s ease forwards 1.2s;
+}
+
+#Miel path:nth-child(5) {
+    stroke-dasharray: 89px;
+    stroke-dashoffset: 89px;
+    animation: writing 2s ease forwards 1.5s;
+}
+
+/* van */
+#van path:nth-child(1) {
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 60px;
+    animation: writing 2s ease forwards 1.6s;
+}
+
+#van path:nth-child(2) {
+    stroke-dasharray: 70px;
+    stroke-dashoffset: 70px;
+    animation: writing 2s ease forwards 1.7s;
+}
+
+#van path:nth-child(3) {
+    stroke-dasharray: 110px;
+    stroke-dashoffset: 110px;
+    animation: writing 2s ease forwards 1.9s;
+}
+
+/* sleeuwen */
+
+#Sleeuwen path:nth-child(1) {
+    stroke-dasharray: 170px;
+    stroke-dashoffset: 170px;
+    animation: writing 2s ease forwards 0.2s;
+}
+
+#Sleeuwen path:nth-child(2) {
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+    animation: writing 2s ease forwards 0.4s;
+}
+
+#Sleeuwen path:nth-child(3) {
+    stroke-dasharray: 70px;
+    stroke-dashoffset: 70px;
+    animation: writing 2s ease forwards 0.8s;
+}
+
+#Sleeuwen path:nth-child(4) {
+    stroke-dasharray: 70px;
+    stroke-dashoffset: 70px;
+    animation: writing 2s ease forwards 1.2s;
+}
+
+#Sleeuwen path:nth-child(5) {
+    stroke-dasharray: 89px;
+    stroke-dashoffset: 89px;
+    animation: writing 2s ease forwards 1.5s;
+}
+
+#Sleeuwen path:nth-child(6) {
+    stroke-dasharray: 140px;
+    stroke-dashoffset: 140px;
+    animation: writing 2s ease forwards 0.8s;
+}
+
+#Sleeuwen path:nth-child(7) {
+    stroke-dasharray: 120px;
+    stroke-dashoffset: 120px;
+    animation: writing 2s ease forwards 1.2s;
+}
+
+#Sleeuwen path:nth-child(8) {
+    stroke-dasharray: 89px;
+    stroke-dashoffset: 89px;
+    animation: writing 2s ease forwards 1.5s;
+}
+
+/* line */
+
+#line path:nth-child(1) {
+    stroke-dasharray: 210px;
+    stroke-dashoffset: 210px;
+    animation: writing 1.2s ease forwards 3.2s;
+}
+
+#line path:nth-child(2) {
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    animation: writing 2s ease forwards 3.4s;
+}
+
+#line path:nth-child(3) {
+    stroke-dasharray: 20px;
+    stroke-dashoffset: 20px;
+    animation: writing 2s ease forwards 3.8s;
+}
+
+
+
 @keyframes writing{
     to{
         stroke-dashoffset: 0;
@@ -188,7 +324,7 @@ h1 {
 
 .dropdownmobile {
     text-align: center;
-    background-image: linear-gradient(#FFF, #9b9b9b);
+    background-color: #0A1252;
     padding: 10px;
     position: relative;
 }
@@ -202,7 +338,6 @@ h1 {
 
 .dropdowncontent {
     display: none;
-    
     position: absolute;
     top: 60px; /* Adjusted for button height */
     left: 50%;
@@ -215,7 +350,7 @@ h1 {
 }
 
 .dropdowncontent a {
-    color: black;
+    color: #0A1252;
     border: 3px solid var(--secondary-color);
     padding: 12px 16px;
     display: block;
@@ -229,8 +364,14 @@ h1 {
     display: block;
 }
 
+.week-1,
+.week-2,
+.week-3 {
+    display: none;
+}
+
 .active {
-    background-color: #afafaf;
+    display: block;
 }
 
 .dropdownmobile button {
@@ -238,30 +379,6 @@ h1 {
     color: white;
     border: none;
     border-radius: 1em;
-}
-
-.desktopheader {
-    background-image: var(--primary-color);
-    height: 3em;
-    padding-left: 5px;
-    display: flex; 
-    justify-content: center;
-    gap: 1em;
-    align-items: center; 
-}
-
-.desktopheader a {
-    border: 3px solid var(--secondary-color);
-    padding: 0.5em;
-    text-decoration: none;
-    background-color: #000;
-    color: #fefefe;
-    border-radius: 1em;
-    height: 2em;
-    display: flex; /* Ensure content inside is vertically aligned */
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Fix typo from "absoulte" to "relative" */
 }
 
 .snowworld video {
@@ -279,7 +396,21 @@ h1 {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.snowhills.scroll {
+    animation: snowhillsup 0.3s ease-in;
+}
+
+@keyframes snowhillsup {
+    0% {
+        transform: translateY(5em);
     }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .miel-1 {
     display: block;
@@ -327,8 +458,65 @@ h1 {
 .miel-1:hover + .banner h1 {
     opacity: 1;
 }
-    
 
+
+.objects img:nth-of-type(1) {
+    position: absolute;
+    top: 63%;
+    left: 16%;
+    rotate: 19deg;
+    scale: 1.4;
+    display: none;
+}
+
+.objects img:nth-of-type(1).scroll {
+    display: block;
+    animation: toabove 0.3s linear;
+}
+
+.objects img:nth-of-type(2) {
+    position: absolute;
+    top: 76%;
+    left: 4%;
+    scale: 1.5;  
+}
+
+.objects img:nth-of-type(3) {
+    position: absolute;
+    top: 79%;
+    left: 27%;
+    scale: 1.5;
+    rotate: -15deg;
+}
+
+.objects img:nth-of-type(4) {
+    position: absolute;
+    top: 78%;
+    right: 53%;
+    rotate: 10deg;
+}
+
+.objects img:nth-of-type(5) {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    scale: 1.6;
+}
+
+.objects img:nth-of-type(6) {
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    scale: 1.5;
+    rotate: -5deg;
+}
+
+.objects img:nth-of-type(7) {
+    position: absolute;
+    top: 86%;
+    right: 1%;
+    scale: 1.4;
+}
 
 
 /* Banner styles for mobile */
@@ -379,7 +567,17 @@ body {
 
 /* Picnic table styles */
 
+@keyframes toabove {
+    0% {
+        transform: translateY(3em);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 
 @keyframes pickup {
@@ -393,6 +591,11 @@ body {
 }
 
 .sprintblock {
+    display: none;
+}
+
+.sprintblock.on {
+    display: block;
     background-color: #ddcfc3;
     border: 2px solid #d19f69;
     width: 256px;
@@ -402,6 +605,7 @@ body {
     top: 72%;
     left: 27%;
     scale: 1.2;
+    animation: slidein 1s ease-in;
     
     h2 {
         margin: 0.5em;
@@ -426,12 +630,20 @@ body {
 
     .cross {
         position: absolute;
-        right: 32px;
-        top: 32px;
+        right: 8px;
+        top: 4px;
+        z-index: 4;
+        scale: 0.8;
+        opacity: 0.5;
     }
 
 
-    .dates {
+    .Sprint-1,
+    .Sprint-2,
+    .Sprint-3,
+    .Sprint-4,
+    .Sprint-5,
+    .Sprint-6 {
         display: grid;
         grid-template-columns: 10% 1fr 1fr 1fr 10%;
         margin: 0.3em;
@@ -449,6 +661,10 @@ body {
             padding: 0.2em;
             font-size: 0.6em;
         }
+    }
+
+    .weekactive {
+        scale: 1.1;
     }
 
     .textfield {
@@ -490,14 +706,131 @@ body {
     }
 }
 
+@keyframes slidein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    } 
+}
+
+.content {
+    display: none;
+}
+
+.rumikubtitle {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
 
 .rumikub-board {
     position: relative;
     top: -44%;
-    scale: 0.2;
-    left: -26%;
-    width: 70%;
+    scale: 0.16;
+    left: -23%;
+    width: 60%;
     height: 10%;
+}
+
+.rumback {
+    scale: 0.9;
+    position: relative;
+    top: -5%;
+}
+
+.rumfront {
+    position: relative;
+    top: 45%;
+    transform: perspective(1.4);
+    transform: rotateX('5deg');
+}
+
+
+.blocks img:nth-of-type(1) {
+    position: absolute;
+    left: 4em;
+    top: 111%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(2) {
+    position: absolute;
+    left: 7em;
+    top: 111%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(3) {
+    position: absolute;
+    left: 10em;
+    top: 111%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(4) {
+    position: absolute;
+    left: 11em;
+    top: 120%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(5) {
+    position: absolute;
+    left: 14em;
+    top: 120%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(6) {
+    position: absolute;
+    left: 17em;
+    top: 120%;
+    width: 2em;
+}
+
+.blocks img:nth-of-type(7) {
+    position: absolute;
+    left: 4em;
+    top: 95.5%;
+    width: 1.8em;
+}
+
+.blocks img:nth-of-type(8) {
+    position: absolute;
+    left: 7em;
+    top: 95.5%;
+    width: 1.8em;
+}
+
+.blocks img:nth-of-type(9) {
+    position: absolute;
+    left: 10em;
+    top: 95.5%;
+    width: 1.8em;
+}
+
+.blocks img:nth-of-type(10) {
+    position: absolute;
+    left: 13em;
+    top: 95.5%;
+    width: 1.8em;
+}
+
+.blocks img:nth-of-type(11) {
+    position: absolute;
+    left: 16em;
+    top: 95.5%;
+    width: 1.8em;
+}
+
+.blocks img:nth-of-type(12) {
+    position: absolute;
+    left: 19em;
+    top: 95.5%;
+    width: 1.8em;
 }
 
 section {
@@ -566,6 +899,7 @@ section {
 
 .globe {
     height: 40em;
+    background-color: #afd3ff;
 }
 
 .worldmap {
@@ -576,6 +910,7 @@ section {
 
 .contact {
     height: 40em;
+    background-color: #FEFEFE;
 }
 
 .formcarry-container {
@@ -654,6 +989,22 @@ footer {
     padding: 0.4em;
 }
 
+@media only screen and (min-width: 700px) {
+    .background {
+        width: 768px;
+    }
+
+    .rumikub-board {
+        top:-49.5%;
+    }
+
+    .rumikubtitle {
+        left: 60%;
+        top: 55%;
+        scale: 1.4;
+    }
+} 
+
 
 @media only screen and (min-width: 768px) {
     .dropdownmobile {
@@ -666,6 +1017,18 @@ footer {
 
     .rumikubmobile {
         display: none;
+    }
+
+    .rumikubmobile.pop {
+        display: block;
+        border: #000 solid 2px;
+        position: relative;
+        z-index: 4;
+        overflow:scroll;
+    }
+
+    .background.pop {
+        width: 100%;
     }
 
     .nostalgiachannel {
@@ -691,6 +1054,10 @@ footer {
     footer {
         display: none;
     }
+    
+    html {
+        overflow:hidden;
+    }
 }
 
 /* Mobile styles */
@@ -710,6 +1077,30 @@ footer {
     .object2 {
         width: 127%;
         top: 10%;
+    }
+    
+    .miel-1 {
+        z-index: -1;
+        scale: 0.4;
+        top: -6%;
+        right: -15%;
+    }
+
+    .snowhills {
+        width: 120%;
+        z-index: -1;
+    }
+
+    .objects {
+        display: none;
+    }
+
+    #text {
+        display: none;
+    }
+
+    #title {
+        scale: 0.7;
     }
 }
 

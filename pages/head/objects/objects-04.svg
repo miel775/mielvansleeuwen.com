@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Video-Tape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4b4b4b;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #0a1252;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="31.07" y="79.54" width="193.85" height="96.93"/>
+  <rect class="cls-3" x="55.31" y="104.74" width="145.39" height="48.46"/>
+  <ellipse class="cls-1" cx="94.95" cy="129.03" rx="23.02" ry="21.93"/>
+  <ellipse class="cls-1" cx="161.83" cy="129.03" rx="23.02" ry="21.93"/>
+  <rect class="cls-2" x="86.32" y="104.74" width="83.36" height="48.46"/>
+</svg>
