@@ -37,23 +37,22 @@ popuprb2.addEventListener('click', function() {
 
 
 
-
-// const firstImage = document.querySelector('.objects img:nth-of-type(1)');
-
-// window.addEventListener('scroll', () => {
-//   firstImage.classList.toggle('scroll', window.scrollY > 0);
-// });
-// de objecten verschijnen wanneer je naar beneden scrollt
-
-
 function toggleWeek(weekClass) {
-  // selecteer alle weken die nog niet zichtbaar zijn in de popup
-  const weeks = document.querySelectorAll('.week-1, .week-2, .week-3');
+  // Alle weken worden geselecteerd
+  const weeks = document.querySelectorAll('[class^="week-"]');
+
+  // de class active wordt verwijderd van de weken
   weeks.forEach(week => {
       week.classList.remove('active');
   });
-  document.querySelector(`.${weekClass}`).classList.add('active');
-  // invoegen van de content binnen de toggleWeek in de HTML
+
+  // voeg active bij de week toe wanneer je op een bepaalde knop drukt
+  const selectedWeek = document.querySelector(`.${weekClass}`);
+  if (selectedWeek) {
+      selectedWeek.classList.add('active');
+  } else {
+      console.error(`Element with class "${weekClass}" not found.`);
+  }
 }
 
 document.querySelector('.rumikubblocks').classList.add('active');
@@ -65,3 +64,11 @@ const objSixPopup = document.querySelector('.rumikubmobile');
   objSix.addEventListener('click', function(e) {
     objSixPopup.classList.toggle('pop');
   })
+
+  
+document.querySelectorAll('.week-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        const weekClass = this.getAttribute('data-week');
+        toggleWeek(weekClass);
+    });
+});

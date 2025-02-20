@@ -459,6 +459,46 @@ h1 {
     opacity: 1;
 }
 
+.objects img:hover {
+    animation: grow 2s ease-in;
+}
+
+@keyframes grow {
+    0% {
+        scale: 0.0;
+    }
+
+    100% {
+        scale: 0.2;
+    }
+}
+
+.objects img .objlabel {
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    position: absolute;
+    z-index: 1;
+}
+
+.objects img:hover .objlabel {
+    visibility: visible;
+}
+
+.objects img:nth-of-type(2) {
+    position: absolute;
+    top: 66%;
+    left: 5%;
+    scale: 1.5;
+    z-index: 5;
+    animation: toabove 0.3s linear;
+}
+
+
 
 .objects img:nth-of-type(1) {
     position: absolute;
@@ -466,19 +506,7 @@ h1 {
     left: 16%;
     rotate: 19deg;
     scale: 1.4;
-    display: none;
-}
-
-.objects img:nth-of-type(1).scroll {
-    display: block;
     animation: toabove 0.3s linear;
-}
-
-.objects img:nth-of-type(2) {
-    position: absolute;
-    top: 76%;
-    left: 4%;
-    scale: 1.5;  
 }
 
 .objects img:nth-of-type(3) {
@@ -487,6 +515,7 @@ h1 {
     left: 27%;
     scale: 1.5;
     rotate: -15deg;
+    animation: toabove 0.3s linear;
 }
 
 .objects img:nth-of-type(4) {
@@ -494,6 +523,7 @@ h1 {
     top: 78%;
     right: 53%;
     rotate: 10deg;
+    animation: toabove 0.3s linear;
 }
 
 .objects img:nth-of-type(5) {
@@ -501,6 +531,7 @@ h1 {
     top: 8%;
     left: 15%;
     scale: 1.6;
+    animation: toabove 0.3s linear;
 }
 
 .objects img:nth-of-type(6) {
@@ -509,6 +540,7 @@ h1 {
     left: 56%;
     scale: 1.5;
     rotate: -5deg;
+    animation: toabove 0.3s linear;
 }
 
 .objects img:nth-of-type(7) {
@@ -516,6 +548,7 @@ h1 {
     top: 86%;
     right: 1%;
     scale: 1.4;
+    animation: toabove 0.3s linear;
 }
 
 
@@ -567,275 +600,7 @@ body {
 
 /* Picnic table styles */
 
-@keyframes toabove {
-    0% {
-        transform: translateY(3em);
-        opacity: 0;
-    }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-@keyframes pickup {
-    0% {
-     transform: scale(0.3) rotateX(40deg);
-    }
-
-    100% {
-        transform: scale(0.3) rotateX(30deg) translateY(-2em);  
-    }
-}
-
-.sprintblock {
-    display: none;
-}
-
-.sprintblock.on {
-    display: block;
-    background-color: #ddcfc3;
-    border: 2px solid #d19f69;
-    width: 256px;
-    height: 350px;
-    position: absolute;
-    z-index: 4;
-    top: 72%;
-    left: 27%;
-    scale: 1.2;
-    animation: slidein 1s ease-in;
-    
-    h2 {
-        margin: 0.5em;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .rumikublogo1 {
-        opacity: 0.5;
-        position: relative;
-        top: -15%;
-        scale: 0.5;
-    }
-
-    .rumikublogo2 {
-        opacity: 0.5;
-        position: relative;
-        left: 82%;
-        top: 5%;
-        scale: 0.5;
-    }
-
-    .cross {
-        position: absolute;
-        right: 8px;
-        top: 4px;
-        z-index: 4;
-        scale: 0.8;
-        opacity: 0.5;
-    }
-
-
-    .Sprint-1,
-    .Sprint-2,
-    .Sprint-3,
-    .Sprint-4,
-    .Sprint-5,
-    .Sprint-6 {
-        display: grid;
-        grid-template-columns: 10% 1fr 1fr 1fr 10%;
-        margin: 0.3em;
-        gap: 2px;
-        text-align: center;
-        margin-top: -3.5em;
-
-        a:nth-of-type(1) {
-            grid-column-start: 2;
-        }
-
-        a {
-            background-color: #d19f69;
-            border: 2px solid #000;
-            padding: 0.2em;
-            font-size: 0.6em;
-        }
-    }
-
-    .weekactive {
-        scale: 1.1;
-    }
-
-    .textfield {
-        height: 213px;
-        width: 191px;
-        background-color: #dab186;
-        position: relative;
-        left: 12%;
-        top: 2%;
-        overflow: scroll;
-        padding: 0.3em;
-
-        h3 {
-            font-size: 16px;
-            
-        }
-
-        h3:nth-of-type(2),
-        h3:nth-of-type(3),
-        h3:nth-of-type(4)
-         {
-            margin-top: 1em;
-        }
-
-        h4 {
-            margin-left: 1em;
-            font-size: 12px;
-        }
-
-        ol {
-            margin-left: 1.2em;
-            font-size: 9px;
-        }
-    }
-
-    h2:nth-of-type(2) {
-        position: relative;
-        top: -13%;
-    }
-}
-
-@keyframes slidein {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    } 
-}
-
-.content {
-    display: none;
-}
-
-.rumikubtitle {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-}
-
-.rumikub-board {
-    position: relative;
-    top: -44%;
-    scale: 0.16;
-    left: -23%;
-    width: 60%;
-    height: 10%;
-}
-
-.rumback {
-    scale: 0.9;
-    position: relative;
-    top: -5%;
-}
-
-.rumfront {
-    position: relative;
-    top: 45%;
-    transform: perspective(1.4);
-    transform: rotateX('5deg');
-}
-
-
-.blocks img:nth-of-type(1) {
-    position: absolute;
-    left: 4em;
-    top: 111%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(2) {
-    position: absolute;
-    left: 7em;
-    top: 111%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(3) {
-    position: absolute;
-    left: 10em;
-    top: 111%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(4) {
-    position: absolute;
-    left: 11em;
-    top: 120%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(5) {
-    position: absolute;
-    left: 14em;
-    top: 120%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(6) {
-    position: absolute;
-    left: 17em;
-    top: 120%;
-    width: 2em;
-}
-
-.blocks img:nth-of-type(7) {
-    position: absolute;
-    left: 4em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-.blocks img:nth-of-type(8) {
-    position: absolute;
-    left: 7em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-.blocks img:nth-of-type(9) {
-    position: absolute;
-    left: 10em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-.blocks img:nth-of-type(10) {
-    position: absolute;
-    left: 13em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-.blocks img:nth-of-type(11) {
-    position: absolute;
-    left: 16em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-.blocks img:nth-of-type(12) {
-    position: absolute;
-    left: 19em;
-    top: 95.5%;
-    width: 1.8em;
-}
-
-section {
-    height: 20em;
-}
 /* nostalgia channel */
 
 .nostalgiachannel {
@@ -868,12 +633,6 @@ section {
     background-color: #0A1252;
     border: 2px solid #FFF ;
     border-radius: 1em;
-}
-
-.rumikubmobile {
-    display: grid;
-    width: 100%;
-    margin-bottom: -1em;
 }
 
 
@@ -1015,19 +774,7 @@ footer {
         display: flex;
     }
 
-    .rumikubmobile {
-        display: none;
-    }
-
-    .rumikubmobile.pop {
-        display: block;
-        border: #000 solid 2px;
-        position: relative;
-        z-index: 4;
-        overflow:scroll;
-    }
-
-    .background.pop {
+    .background {
         width: 100%;
     }
 
