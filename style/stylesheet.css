@@ -1,0 +1,42 @@
+:root {
+    /* gradient */
+    --primary-color-gradient: linear-gradient(#474F96, #0A1252);
+    --secondary-color-gradient: linear-gradient(#938d8d, #111111);
+    
+    /* colors */
+    --color-1: #0A1252;
+    --color-2: #0d0d0d;
+    --color-3: #FEFEFE;
+    --color-4: #9f9d9d;
+
+    /* border-radius */
+    --radius-1: 3em;
+}
+
+/* fonts */
+
+.jersey-20-regular {
+    font-family: "Jersey 20", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+      font-family: "Garet Heavy";
+      src: url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.eot");
+      src: url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/1e448c1940b5b2e20a8559ec2f4c6a1f.svg#Garet Heavy")format("svg");
+  }
+
+  @font-face {
+    font-family: "Garet Book";
+    src: url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.eot");
+    src: url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5ebe3f5f5a6cdaffeafd16be0c93df0b.svg#Garet Book")format("svg");
+}
