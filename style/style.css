@@ -15,7 +15,8 @@ header {
 
     div:nth-of-type(2) {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 15px;
     }
 
     button {
@@ -43,24 +44,18 @@ h2 {
 }
 
 section:nth-of-type(1) {
-    height: 65vh;
-
+    
     h1 {
         position: relative;
         top: -1.5em;
         left: 5%;
+        margin-top: 2.9em;
     }
 
     h2 {
         position: relative;
         top: -7em;
-        left: 5%;
-    }
-
-    img {
-        position: relative;
-        top: 5em;
-        left: 60%;
+        left: 6%;
     }
 
     video {
@@ -77,24 +72,49 @@ section:nth-of-type(1) {
         z-index: 2;
         width: 1600px;
         height: 20px;
-        top: -32.5em;
+        top: -29em;
         background-image: var(--primary-color-gradient);
     }
 }
 
 section:nth-of-type(2) {
-    height: 500px;
-    margin-top: -8em;
+    margin-top: -46em;
 
-    img {
+    media (max-width: 1000px) {
+        margin-top: -550em;
+    }
+    h2 {
+        position: relative;
+        top: 5em;
+        left: 6%;
+    }
+
+    video {
         width: 100%;
+
     }
 }
 
 footer {
-    height: 15em;
-    margin-top: -9em;
+    height: 20em;
     background-image: var(--primary-color-gradient);
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: -5em;
+
+    a {
+        width: 2em;
+        height: 2em;
+        border: 1px var(--color-2) solid;
+        background-color: var(--color-3);
+        display: flex;
+        align-content: center;
+        border-radius: 1em;
+        gap: 1em;
+    }
+
 }
+
+
+
