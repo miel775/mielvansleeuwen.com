@@ -1,0 +1,29 @@
+{% render 'partials/header.liquid', title:'Home' %}
+
+
+<main>
+    <section class="about-me">
+        <h1>Portfolio</h1>
+        <h2>Miel van Sleeuwen</h2>
+        <video autoplay loop muted>
+            <source src="assets/home/video-banner.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="blueline"></div>
+
+    <section class="tanavad">
+        <h2>Tanavad</h2>
+        <video autoplay loop muted>
+            <source src="assets/home/boekel-version-1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        {% for file in files %}
+            <a href="'/learning-journal/{{ file }}">{{ file|slice:0,-3 }}</a>
+        {% endfor %}
+    </section>
+</main>
+
+{% render 'partials/footer.liquid' %}
