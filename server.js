@@ -1,22 +1,21 @@
 
 import express from 'express';
-const app = express();
-
-app.use(express.static('public'));
-
+import { marked } from "marked";
 import { Liquid } from 'liquidjs';
-
 import { readdir, readFile } from 'node:fs/promises';
+import matter from "gray-matter"
 
 const files = await readdir('content')
-console.log(files)
 
-app.use(express.urlencoded({extended: true}));
+const app = express();
+app.use(express.static('public'));
 
 const engine = new Liquid();
 app.engine('liquid', engine.express()); 
 
 app.set('views', './views')
+
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', async function(request, response) {
   response.render('home.liquid')
@@ -36,11 +35,20 @@ app.get('/learning-journal',async function(request, response) {
 })
 
 app.get('/learning-journal/:slug', async function(request, response){
+  console.log(request.params)
 
-  console.log(request.params.slug)
+  
+  const fileContents = await readFile("content/" + request.params.slug + ".md", { encoding: "utf8" })
+  const markedUp = marked.parse(fileContents)
+  const article = matter(fileContents)
 
-  const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' })
-  response.render('artikel.liquid')
+  response.render('artikel.liquid',{
+    content: fileContents,
+    markedUp: markedUp,
+    title: article.data.title,
+    date: article.data.date,
+    author: article.data.author
+  })
 })
 
 app.get('/projects',async function(request, response) {

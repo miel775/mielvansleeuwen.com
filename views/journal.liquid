@@ -25,7 +25,7 @@
                 {{ files | json }}
 
                 {% for file in files %}
-                    <a href="'/learning-journal/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
+                    <a href="learning-journal/{{ file | slice:0,-3 }}">{{ file | slice:0,-3 }}</a>
                 {% endfor %}
             </div>
         </article>
