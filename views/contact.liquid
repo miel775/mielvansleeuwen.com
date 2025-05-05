@@ -3,23 +3,25 @@
 
 <main>
 
-    <section class="contact-content">
 
-        <article class="grey-area-contact">
-            <div>
-                <!-- background imgage -->
-                 <h2>Contact Me</h2>
-                 <p> If you want to collaborate with me contact me!</p>
-            </div>
-                <div class="contact-blocks">
-                </div>
-            <div>
-            </div>
-        </article>
-        
+<section class="about-section">
+    <img class="banner-about" src="/assets/about/banner-about.png">
+    <h3>Contact</h3>
+    <p>You can connect me via this form!</p>
+    
+    <form action="/submit" method="POST">
 
-    </section>
+    <label for="textfield">Message:</label>
+    <input type="text" id="textfield" aname="text-field" height="10" required>
 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <button type="submit">Submit</button>
+  </form>
 </main>
     
 

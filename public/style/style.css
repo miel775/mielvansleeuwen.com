@@ -17,7 +17,7 @@ body {
 .blue-line {
     background-image: var(--primary-color-gradient);
     height: 1.5em;
-    margin-top: -5em;
+    margin-top: 0em;
 }
 
 /* Header Styling */
@@ -244,6 +244,7 @@ body {
     background-image: var(--primary-color-gradient);
     position: relative;
     z-index: 2;
+    top: 0em;
 }
 
 /* Tanavad Section */
@@ -315,4 +316,75 @@ footer {
 .active {
     color: var(--color-3);
     background-color: var(--color-1);
+}
+
+/* about */
+
+.about-me {
+    text-align: center;
+}
+
+.banner-about {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+.grey-area {
+    background-image: url('/assets/about/banner-about.png');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* adjust as needed */
+    position: relative;
+    display: flex;
+    margin-top: 0em;
+    align-items: center;
+    justify-content: center;
+    color: white; /* make text visible on image */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about-me-text {
+    font-size: 2rem;
+    z-index: 1;
+  }
+
+
+.about-section {
+    margin: 5em;
+    padding: 2em;
+    background-color: white;
+
+    h3 {
+        background-image: var(--primary-color-gradient);
+    }
+
+    p:nth-of-type(1) {
+    color: black;
+    margin-top: -4em;
+    }
+
+    p:nth-of-type(2) {
+        color: black;
+    }
+}
+
+.jorunal-section {
+    margin: 5em;
+    padding: 2em;
+    background-color: white;
+
+    h3 {
+        background-image: var(--primary-color-gradient);
+    }
+
+    p:nth-of-type(1) {
+    color: black;
+    margin-top: -4em;
+    }
+
+    p:nth-of-type(2) {
+        color: black;
+    }
 }

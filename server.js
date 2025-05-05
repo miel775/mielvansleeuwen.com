@@ -25,6 +25,10 @@ app.get('/about_me',async function(request, response) {
   response.render('about.liquid')
 });
 
+app.get('/projects', async function(request, response) {
+  response.render('projects.liquid')
+});
+
 app.get('/contact',async function(request, response) {
   response.render('contact.liquid')
 })

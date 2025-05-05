@@ -26,11 +26,13 @@
         <div>
             <img class="logo" src="assets/home/miel.svg" alt="Logo">
         </div>
+
         <div class="nav-buttons">
-            <a href="pages/journal.html">Journal</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/about.html">About me</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="/" class="fa-solid fa-house"></a>
+            <a href="/learning-journal">Journal</a>
+            <a href="/projects">Projects</a>
+            <a href="/about_me">About me</a>
+            <a href="/contact">Contact</a>
         </div>
     </header>
 
@@ -41,11 +43,17 @@
         <div class="dropdown">
             <label>Menu</label>
             <ul>
-                <li href="pages/journal.html">Journal</li>
-                <li href="pages/projects.html">Projects</li>
-                <li href="pages/about.html">About Me</li>
-                <li href="pages/contact.html">Contact</li>
+                <li href="/learning-journal">Journal</li>
+                <li href="/projects">Projects</li>
+                <li href="/about_me">About Me</li>
+                <li href="/contact">Contact</li>
             </ul>
 
         </div>
+
+        <script type="module">
+     import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    document.getElementById('content').innerHTML =
+    marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+    </script>
     </header>
