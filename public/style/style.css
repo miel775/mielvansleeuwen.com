@@ -188,6 +188,11 @@ body {
     }
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
+
 .about-me {
     position: relative;
     text-align: start;
